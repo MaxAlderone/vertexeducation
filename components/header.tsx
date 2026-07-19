@@ -1,0 +1,5 @@
+"use client";
+import Link from "next/link";
+import {useState} from "react";
+import {nav,site} from "@/lib/site-data";
+export function Header(){const [open,setOpen]=useState(false);return <header className="site-header"><div className="nav-shell"><Link href="/" className="brand" onClick={()=>setOpen(false)}><span className="brand-mark">V</span><span>{site.name}</span></Link><nav className="desktop-nav" aria-label="Primary">{nav.map(([label,href])=><Link key={href} href={href}>{label}</Link>)}</nav><div className="nav-actions"><Link className="mentor-link" href="/become-a-mentor">Become a mentor</Link><Link className="button small" href="/apply">Apply</Link></div><button className="menu-button" aria-expanded={open} aria-label="Toggle navigation" onClick={()=>setOpen(!open)}><span/><span/></button></div>{open&&<nav className="mobile-nav" aria-label="Mobile">{nav.map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}<Link href="/for-parents">For parents</Link><Link href="/become-a-mentor">Become a mentor</Link><Link className="button" href="/apply">Apply as a student</Link></nav>}</header>}
