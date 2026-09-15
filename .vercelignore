@@ -1,0 +1,12 @@
+.git
+.next
+node_modules
+.codex
+.agents
+.vscode
+.env*
+docs
+tmp
+*.tsbuildinfo
+run-local.command
+publish-changes.command

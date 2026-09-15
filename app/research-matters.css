@@ -1,0 +1,138 @@
+.why-vertex-admissions {
+  grid-column: 1 / -1;
+  padding-top: 32px;
+  border-top: 1px solid #e1d4bd;
+}
+
+.research-matters-heading {
+  max-width: 960px;
+}
+
+.research-matters-heading h3 {
+  margin: 0 0 12px;
+}
+
+.university-showcase {
+  margin: 28px 0 36px;
+}
+
+.why-vertex-admissions .university-showcase-label {
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: .82rem;
+  text-align: center;
+}
+
+.university-logos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 36px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.university-logos a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.university-logos a:focus-visible {
+  outline: 2px solid #ad6d00;
+  outline-offset: 8px;
+}
+
+.university-logo {
+  position: relative;
+  display: block;
+  width: 112px;
+  height: 88px;
+  margin-bottom: 12px;
+}
+
+.university-logo img {
+  object-fit: contain;
+  padding: 4px;
+}
+
+.university-name {
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.university-country {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .7rem;
+  text-align: center;
+}
+
+.research-evidence {
+  display: grid;
+  gap: 36px;
+  max-width: 960px;
+  margin: 44px auto 0;
+}
+
+.research-evidence-quote {
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.research-evidence-quote p {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.research-evidence-sources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.research-evidence-sources a {
+  color: #9a6200;
+  font-size: .8rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-color: #c6b189;
+  text-underline-offset: 3px;
+}
+
+.research-evidence-sources .research-evidence-related {
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.research-evidence-sources a:focus-visible {
+  outline: 2px solid #ad6d00;
+  outline-offset: 4px;
+}
+
+.research-evidence-sources a:hover,
+.university-logos a:hover .university-name {
+  color: #9a6200;
+}
+
+@media (max-width: 700px) {
+  .research-evidence {
+    gap: 28px;
+    margin-top: 32px;
+  }
+
+  .university-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+}

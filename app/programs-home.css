@@ -1,0 +1,61 @@
+.section.programs-home { padding-top: 0; }
+.section.research-opportunities { padding-top: 0; display: grid; gap: 32px; }
+.research-opportunity { padding: clamp(28px, 4vw, 56px); border: 1px solid #e1d4bd; border-radius: 12px; background: #fff; }
+.research-opportunity-scholarships { background: #f4efe5; }
+.research-opportunity .programs-home-heading h2 { margin-top: 0; }
+.research-opportunity .programs-home-heading p { max-width: 900px; }
+.opportunity-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; padding-top: 28px; border-top: 1px solid #e1d4bd; }
+.opportunity-highlights .icon { width: 28px; height: 28px; margin-bottom: 16px; color: #ad6d00; }
+.opportunity-highlights h3 { font-size: 1.1rem; font-weight: 500; line-height: 1.3; margin-bottom: 12px; }
+.opportunity-highlights p { margin-bottom: 0; color: var(--muted); font-size: .95rem; line-height: 1.7; }
+.scholarship-steps { list-style: none; padding-left: 0; margin-bottom: 0; }
+.scholarship-step-number { display: block; margin-bottom: 16px; color: #ad6d00; font-size: .85rem; font-weight: 600; }
+@media (max-width: 700px) { .opportunity-highlights { grid-template-columns: 1fr; gap: 28px; } }
+.programs-home-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 36px; }
+.programs-home-heading h2 { max-width: 760px; margin: 12px 0 18px; font-size: clamp(1.75rem, 2.7vw, 2.75rem); font-weight: 500; line-height: 1.15; text-wrap: balance; }
+.programs-home-heading p:not(.eyebrow) { max-width: 680px; margin-bottom: 0; color: var(--muted); }
+.programs-home-heading p.programs-home-subtitle { margin-bottom: 14px; color: #13252b; font-family: var(--display); font-size: clamp(1.2rem, 1.8vw, 1.6rem); line-height: 1.35; }
+.programs-home-heading > .text-link { flex-shrink: 0; border-bottom-color: #ad6d00; }
+.section.application-panels { padding-top: 0; display: grid; gap: 28px; }
+.application-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: clamp(28px, 5vw, 72px); padding: clamp(28px, 4vw, 56px); border: 1px solid #e1d4bd; border-radius: 12px; background: #f4efe5; color: var(--ink); }
+.application-card .programs-home-heading { margin: 0; }
+.application-card .programs-home-heading h2 { margin-top: 0; }
+.application-card-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.application-card .button { background: #ad6d00; border-color: #ad6d00; color: #fff; border-radius: 6px; min-width: 205px; }
+.application-card .button:hover { background: #8b5700; border-color: #8b5700; box-shadow: 0 8px 24px rgba(173, 109, 0, .18); }
+.application-card .text-link { color: var(--ink); border-bottom-color: #ad6d00; }
+.application-card a:focus-visible { outline: 2px solid #ad6d00; outline-offset: 4px; }
+@media (max-width: 900px) { .application-card { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .application-card-actions { align-items: stretch; } .application-card .button { width: 100%; min-width: 0; } .application-card .text-link { align-self: flex-start; } }
+.program-comparison-scroll { overflow-x: auto; border: 1px solid #ded5c5; border-radius: 12px; }
+.program-comparison-scroll:focus-visible { outline: 2px solid #ad6d00; outline-offset: 4px; }
+.program-comparison { width: 100%; min-width: 800px; table-layout: fixed; border-collapse: collapse; text-align: center; }
+.program-comparison caption { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.program-comparison th, .program-comparison td { padding: 24px 18px; border-right: 1px solid #ded5c5; border-bottom: 1px solid #e8e1d5; }
+.program-comparison tr > :last-child { border-right: 0; }
+.program-comparison tbody tr:last-child > * { border-bottom: 0; }
+.program-comparison thead th { padding: 42px 18px; background: #f4efe5; color: var(--ink); }
+.program-comparison thead th:nth-child(3) { background: #e1d4bd; }
+.program-comparison thead th:nth-child(4) { background: #ad6d00; color: #fff; }
+.program-comparison thead .program-comparison-label { width: 25%; background: #f4efe5; color: #172326; text-align: left; font-weight: 500; }
+.program-comparison h3 { margin: 0; font-size: clamp(1.1rem, 1.65vw, 1.6rem); font-weight: 500; line-height: 1.45; text-transform: uppercase; letter-spacing: 0; }
+.program-comparison thead p { margin: 0; font-size: .9rem; font-weight: 400; line-height: 1.6; color: inherit; }
+.program-comparison tbody th { text-align: center; font-size: .95rem; font-weight: 400; background: #fff; }
+.program-comparison td { color: #526164; background: #fff; font-size: .95rem; }
+.program-comparison tbody tr > * { padding-top: 32px; padding-bottom: 32px; }
+.program-comparison-check { display: inline-flex; color: #172326; }
+.program-comparison-check .icon { width: 32px; height: 32px; }
+.program-comparison-symposium { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.program-comparison-footnote { margin: 20px 0 0; color: var(--muted); font-size: .85rem; }
+.program-comparison-actions .button { background: #ad6d00; border-color: #ad6d00; }
+.programs-home-help { margin: 24px 0 0; color: var(--muted); font-size: .95rem; }
+.programs-home-help a { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 900px) {
+  .programs-home-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
+}
+@media (max-width: 700px) {
+  .program-comparison th, .program-comparison td { padding: 20px 16px; }
+  .program-comparison thead th { padding: 28px 16px; }
+  .program-comparison thead .program-comparison-label { min-width: 130px; }
+  .program-comparison td, .program-comparison thead th:not(.program-comparison-label) { min-width: 190px; }
+}

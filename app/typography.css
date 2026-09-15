@@ -2,3 +2,508 @@
   --display: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   --sans: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 }
+
+.hero {
+  isolation: isolate;
+  background-color: #13252b;
+  background-image:
+    linear-gradient(90deg, rgba(7, 18, 28, 0.9) 0%, rgba(7, 18, 28, 0.74) 44%, rgba(7, 18, 28, 0.24) 74%, rgba(7, 18, 28, 0.08) 100%),
+    url("/cambridge-campus.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero-visual {
+  display: none;
+}
+
+.hero .hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero .hero-copy {
+  width: 100%;
+  max-width: 980px;
+  min-width: 0;
+}
+
+.hero .eyebrow {
+  color: #fff;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(0.88rem, 1vw, 0.98rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  text-transform: none;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero .eyebrow > span {
+  width: 28px;
+  height: 2px;
+  background: #f2a000;
+}
+
+.hero-copy .hero-title {
+  margin: 24px 0 28px;
+  color: #fff;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 5.2vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.24);
+}
+
+.hero-title-primary,
+.hero-copy .hero-title-accent {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-title-primary {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.hero-copy .hero-title-accent {
+  margin-top: 0.18em;
+  color: #ffc14d;
+  font-family: inherit;
+  font-size: .88em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.hero .lede {
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.28);
+}
+
+.hero .hero-lede {
+  width: max-content;
+  max-width: none;
+  margin-bottom: 0;
+  padding: 17px 22px 18px;
+  border-left: 3px solid #f2a000;
+  border-radius: 0 10px 10px 0;
+  background: linear-gradient(90deg, rgba(7, 18, 28, 0.68), rgba(7, 18, 28, 0.3));
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  font-weight: 500;
+  line-height: 1.58;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+.hero-lede > span {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-lede strong {
+  color: #ffc14d;
+  font-weight: 700;
+}
+
+.hero .button {
+  min-height: 58px;
+  padding: 0 30px;
+  border-color: #f2a000;
+  border-radius: 6px;
+  background: #f2a000;
+  color: #111820;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.hero .button:hover {
+  box-shadow: 0 10px 28px rgba(242, 160, 0, 0.28);
+}
+
+.hero .text-link,
+.hero .scroll-cue {
+  color: #fff;
+}
+
+.hero .text-link {
+  border-bottom-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero .microcopy {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(0.9rem, 0.95vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
+}
+
+.intro-band {
+  grid-template-columns: 1fr;
+  border-top: 1px solid #e1d4bd;
+  border-bottom: 1px solid #ded5c5;
+  background: #f4efe5;
+  color: #172326;
+}
+
+.intro-statement {
+  width: min(100%, 960px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-statement p {
+  max-width: none;
+  font-family: "Iowan Old Style", Baskerville, "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(2.05rem, 2.85vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.intro-statement em {
+  color: #ad6d00;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.intro-statement .text-link {
+  margin-top: 30px;
+  color: #172326;
+  border-bottom-color: rgba(169, 79, 11, 0.58);
+}
+
+.big-quote {
+  color: rgba(169, 79, 11, 0.2);
+  font-family: "Iowan Old Style", Baskerville, Georgia, serif;
+}
+
+.big-quote.big-quote-close {
+  left: auto;
+  right: -45px;
+  top: auto;
+  bottom: -55px;
+}
+
+@media (max-width: 700px) {
+  .big-quote.big-quote-close {
+    right: -10px;
+  }
+}
+
+.intro-side p {
+  color: #526164;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.72;
+}
+
+.intro-side .text-link {
+  color: #172326;
+  border-bottom-color: rgba(169, 79, 11, 0.58);
+}
+
+/* Keep the complete research journey in one continuous panel. */
+.research-process .section-head h2 {
+  margin-top: 0;
+  font-size: clamp(1.75rem, 2.7vw, 2.75rem);
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.research-process-brand {
+  color: #ad6d00;
+}
+
+.research-process .section-head .research-process-subtitle {
+  margin-top: 16px;
+  color: var(--ink);
+  font-family: "Iowan Old Style", Baskerville, "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.research-process .steps {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 28px 0;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f4f2eb;
+}
+
+.research-process .steps .step {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 12px 20px;
+  border: 0;
+  border-right: 1px solid var(--line);
+}
+
+.research-process .steps .step:last-child {
+  border-right: 0;
+}
+
+.research-process .step-num {
+  margin-bottom: 36px;
+  color: #7d8786;
+  font-size: .75rem;
+}
+
+.research-process .steps .step-dot {
+  top: 43px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 0 0 4px #f4f2eb;
+}
+
+.research-process .steps .step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 48.5px;
+  left: 31px;
+  right: -16px;
+  border-top: 1.5px solid #ad6d00;
+  pointer-events: none;
+}
+
+.research-process .steps .step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 45.5px;
+  right: -14px;
+  width: 6px;
+  height: 6px;
+  border-top: 1.5px solid #ad6d00;
+  border-right: 1.5px solid #ad6d00;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.research-process .step h3 {
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.research-process .step p {
+  margin-bottom: 0;
+}
+
+.section.mentors-home,
+.section.why-vertex {
+  padding-top: 0;
+}
+
+.mentors-home-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+  padding: clamp(28px, 4vw, 56px);
+  border: 1px solid #e1d4bd;
+  border-radius: 12px;
+  background: #f4efe5;
+}
+
+.mentors-home-panel h2,
+.why-vertex-panel h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 2.7vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.mentors-home-copy p {
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.mentors-home-copy .text-link,
+.why-vertex-header .text-link {
+  border-bottom-color: #ad6d00;
+}
+
+.why-vertex-panel {
+  padding: clamp(28px, 4vw, 56px);
+  border: 1px solid #e1d4bd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.why-vertex-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.why-vertex-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.why-vertex-benefits article {
+  min-width: 0;
+}
+
+.why-vertex-benefits .why-vertex-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  border: 1px solid #e1d4bd;
+  border-radius: 12px;
+  background: #f4efe5;
+  overflow: hidden;
+}
+
+.why-vertex-image {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f4efe5;
+  box-shadow: inset 0 0 0 1px rgba(124, 99, 61, .08);
+}
+
+.why-vertex-image img {
+  object-fit: cover;
+}
+
+.why-vertex-featured .why-vertex-image {
+  align-self: stretch;
+  aspect-ratio: auto;
+  min-height: 300px;
+  border-radius: 0;
+}
+
+.why-vertex-featured .why-vertex-copy {
+  padding: clamp(24px, 3vw, 40px);
+}
+
+.why-vertex-benefits h3 {
+  margin: 20px 0 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.why-vertex-featured h3 {
+  margin-top: 0;
+}
+
+.why-vertex-benefits p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1050px) {
+  .why-vertex-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .research-process .steps {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .research-process .steps .step {
+    padding: 24px 24px 24px 76px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .research-process .step-num {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 32px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .research-process .steps .step-dot {
+    top: 55px;
+    left: 30.5px;
+  }
+
+  .research-process .steps .step:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+
+  .research-process .steps .step:not(:last-child)::before {
+    top: 66px;
+    bottom: -20px;
+    left: 36px;
+    right: auto;
+    border-top: 0;
+    border-left: 1.5px solid #ad6d00;
+  }
+
+  .research-process .steps .step:not(:last-child)::after {
+    top: auto;
+    bottom: -17px;
+    left: 33px;
+    right: auto;
+    transform: rotate(135deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .why-vertex-benefits .why-vertex-featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .why-vertex-featured .why-vertex-image {
+    aspect-ratio: 3 / 2;
+    min-height: 0;
+  }
+
+  .mentors-home-panel,
+  .why-vertex-benefits {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .hero .hero-lede {
+    width: auto;
+    max-width: 690px;
+    padding: 15px 17px 16px;
+  }
+
+  .hero-lede > span {
+    display: inline;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  .steps .step {
+    border-right: 0;
+  }
+
+  .hero {
+    background-image:
+      linear-gradient(rgba(7, 18, 28, 0.77), rgba(7, 18, 28, 0.77)),
+      url("/cambridge-campus.jpg");
+    background-position: 64% center;
+  }
+
+}

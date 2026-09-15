@@ -27,17 +27,19 @@ export const subjects = [
 
 export const steps = [
   ["01","Tell us what interests you","Share your interests, background, and the questions you keep returning to."],
-  ["02","Meet the right mentor","We identify an expert whose knowledge and approach fit your direction."],
-  ["03","Shape a focused question","Turn a broad curiosity into a project that is original, rigorous, and feasible."],
-  ["04","Research and build","Work independently between one-on-one sessions, with thoughtful feedback along the way."],
-  ["05","Complete your project","Bring your thinking together in a paper, analysis, prototype, or other meaningful outcome."],
+  ["02","Work with a mentor from top universities in the world","We pair you with an expert researcher from a world-leading institution, such as Cambridge, Oxford, Stanford, or an Ivy League university, whose knowledge and approach fit your direction."],
+  ["03","Shape a focused question","The researcher will turn your broad curiosity into a well-defined project that is original, rigorous, and feasible."],
+  ["04","Research and build","Work independently between one-on-one sessions with a world-class researcher, receiving thoughtful feedback along the way."],
+  ["05","Produce a tangible research outcome","Bring your thinking together in a paper, analysis, prototype, or other meaningful outcome you can showcase."],
+  ["06","Present at a research symposium","Present your research at a symposium involving world-leading researchers, share your findings, and build confidence in communicating your work."],
+  ["07","Recommendation letters","The researcher can provide recommendation letters reflecting your research to support your applications to leading universities worldwide."],
 ];
 
 export const projects = [
-  {title:"Can language models recognize misleading claims?",subject:"Artificial Intelligence",type:"Model + research report",tone:"blue",mark:"01"},
-  {title:"Mapping access: transit and local economic activity",subject:"Economics",type:"Data analysis",tone:"orange",mark:"02"},
-  {title:"What makes an orbit stable in a three-body system?",subject:"Physics",type:"Simulation",tone:"violet",mark:"03"},
-  {title:"Modeling how infections move through a community",subject:"Biology",type:"Computational study",tone:"green",mark:"04"},
+  {title:"Understanding black hole properties using acoustic models",subject:"Physics",type:"Acoustic modeling + theoretical analysis",tone:"violet",mark:"01",image:"/projects/m87-black-hole.webp",imageAlt:"Event Horizon Telescope image of the bright ring and dark shadow of the M87 black hole.",imageSource:"https://www.eso.org/public/images/eso1907a/",imageCredit:"EHT Collaboration",pairedImage:{image:"/projects/acoustic-waves.webp",alt:"Concentric water ripples illustrating wave behavior.",source:"https://www.pexels.com/photo/ripples-on-the-surface-of-the-water-9667518/"}},
+  {title:"Can language models recognize misleading claims?",subject:"Artificial Intelligence",type:"Model + research report",tone:"blue",mark:"02",image:"/projects/language-models.webp",imageAlt:"Programming code on a laptop screen.",imageSource:"https://www.pexels.com/photo/a-laptop-screen-with-text-4439901/"},
+  {title:"Mapping access: transit and local economic activity",subject:"Economics",type:"Data analysis",tone:"orange",mark:"03",image:"/projects/urban-transit.webp",imageAlt:"Aerial photograph of a train passing between city buildings.",imageSource:"https://www.pexels.com/photo/aerial-view-of-urban-train-passing-through-cityscape-29044600/"},
+  {title:"Modeling how infections move through a community",subject:"Biology",type:"Computational study",tone:"green",mark:"04",image:"/projects/infection-research.webp",imageAlt:"A microscope and glassware on a laboratory bench.",imageSource:"https://www.pexels.com/photo/a-microscope-and-laboratory-equipments-8325755/"},
 ];
 
 export const faqs = [

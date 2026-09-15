@@ -3,3 +3,25 @@
 @media(max-width:1050px){.desktop-nav{display:none}.mentor-link{display:none}.menu-button{display:flex;margin-left:auto;width:42px;height:42px;background:transparent;border:0;flex-direction:column;justify-content:center;gap:7px}.menu-button span{width:24px;height:1px;background:var(--ink)}.mobile-nav{display:flex;position:absolute;top:84px;left:0;right:0;background:var(--paper);padding:25px 5vw 35px;flex-direction:column;gap:18px;border-bottom:1px solid var(--line);box-shadow:0 20px 30px #17232615}.mobile-nav a{font-family:var(--display);font-size:1.25rem}.mobile-nav .button{font:700 .85rem var(--sans);margin-top:10px}.hero{padding-top:50px}.hero-grid{grid-template-columns:1fr;min-height:0}.hero-copy{max-width:800px}.hero-visual{height:500px;max-width:650px;width:100%;margin:auto}.steps{grid-template-columns:repeat(2,1fr);border-top:0}.step{border-top:1px solid var(--line)}.subject-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:repeat(2,1fr)}.program-feature{grid-template-columns:1fr}.program-art{height:500px}.footer-top{grid-template-columns:2fr 1fr 1fr}.footer-col:last-child{grid-column:2}.role-grid{grid-template-columns:repeat(2,1fr)}.program-detail{grid-template-columns:1fr}.program-index{max-width:180px}.form-shell{grid-template-columns:1fr}.form-aside{position:static}.journey article{grid-template-columns:.12fr 1fr}.journey-art{display:none}}
 @media(max-width:700px){body{font-size:15px}.site-header{height:70px}.nav-shell{padding:0 20px}.mobile-nav{top:70px}.nav-actions{display:none}.section,.soft-section{padding:75px 22px}.hero{padding:55px 22px 65px}.hero h1{font-size:3.45rem}.hero-actions{align-items:flex-start;flex-direction:column;gap:20px}.hero-visual{height:420px;margin-top:20px}.rc-one{left:2%;top:55px}.rc-two{right:0}.rc-three{left:8%;bottom:20px}.scroll-cue{display:none}.intro-band{padding:100px 25px 75px;grid-template-columns:1fr;gap:45px}.big-quote{left:-10px}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:45px}.section-head>.text-link{white-space:normal}.steps{grid-template-columns:1fr}.step,.step+.step{padding:28px 10px 25px 0;min-height:0}.step+.step .step-dot{left:0}.step-num{margin-bottom:25px}.subject-grid{grid-template-columns:1fr}.subject-card{min-height:230px}.program-art{height:370px}.project-grid,.project-grid.full{grid-template-columns:1fr}.project-grid.full .project-visual{height:250px}.mentor-band{padding:75px 22px;grid-template-columns:1fr;gap:30px}.cta-wrap{padding:22px}.cta{padding:55px 25px;grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}.footer-intro{grid-column:1/-1;margin-bottom:25px}.footer-col:last-child{grid-column:auto}.footer-bottom{flex-direction:column;gap:15px}.page-hero{padding:85px 22px 70px;min-height:510px}.detail-grid,.feature-three,.split-copy,.benefit-grid{grid-template-columns:1fr}.role-grid{grid-template-columns:1fr}.subject-directory>div{grid-template-columns:1fr;gap:20px}.subject-list>a{grid-template-columns:55px 1fr 25px}.journey article{grid-template-columns:35px 1fr;padding:45px 0;min-height:0}.notice{grid-template-columns:1fr;gap:8px}.manifesto{grid-template-columns:1fr;gap:20px}.manifesto p{grid-column:auto}.form-shell,.contact-shell{padding:70px 22px;grid-template-columns:1fr}.field-grid{grid-template-columns:1fr;gap:0}.form-end{align-items:flex-start;flex-direction:column}.contact-form{padding:25px}.success{padding:45px 25px}.question-box{padding:35px 25px}.footer-col{min-width:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Vertex Institute brand lockup */
+.site-header{background:#000;border-bottom-color:#252525;backdrop-filter:none}
+.logo-link{flex:0 0 auto;line-height:0}
+.site-logo{display:block;width:218px;height:auto}
+.nav-shell{gap:clamp(20px,2vw,32px)}
+.desktop-nav{gap:clamp(14px,1.6vw,24px)}
+.desktop-nav a,.mentor-link{font-size:1rem;font-weight:600;color:#f5f5f5;white-space:nowrap}
+.desktop-nav a{display:inline-flex;align-items:center;min-height:44px}
+.mentor-link{padding:12px 0}
+.nav-actions{gap:16px;flex-shrink:0}
+.desktop-nav a:hover,.mentor-link:hover{color:#f2a000}
+.site-header .button{background:#f2a000;border-color:#f2a000;color:#090909;font-size:1rem}
+.site-header .button:hover{box-shadow:0 8px 24px rgba(242,160,0,.22)}
+.site-header a:focus-visible,.menu-button:focus-visible{outline:2px solid #f2a000;outline-offset:5px}
+.menu-button span{background:#fff}
+.mobile-nav{background:#000;border-bottom-color:#2c2c2c;color:#fff;box-shadow:0 20px 30px #0004}
+.mobile-nav a{font-weight:600}
+footer{background:#000}
+.footer-logo{display:block;width:min(300px,100%);height:auto}
+
+@media(max-width:700px){.site-logo{width:175px}.footer-logo{width:260px}}
