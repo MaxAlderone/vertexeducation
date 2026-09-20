@@ -6,8 +6,8 @@ export const site = {
 };
 
 export const nav = [
-  ["Programs", "/programs"], ["How it works", "/how-it-works"], ["Mentors", "/mentors"],
-  ["Subjects", "/subjects"], ["Projects", "/projects"], ["About", "/about"],
+  ["How it works", "/how-it-works"], ["Why us", "/why-us"], ["About", "/about"],
+  ["Mentors", "/mentors"], ["Programs", "/programs"], ["Subjects", "/subjects"], ["Projects", "/projects"], ["For Parents", "/for-parents"],
 ] as const;
 
 export const subjects = [
@@ -32,7 +32,7 @@ export const steps = [
   ["04","Research and build","Work independently between one-on-one sessions with a world-class researcher, receiving thoughtful feedback along the way."],
   ["05","Produce a tangible research outcome","Bring your thinking together in a paper, analysis, prototype, or other meaningful outcome you can showcase."],
   ["06","Present at a research symposium","Present your research at a symposium involving world-leading researchers, share your findings, and build confidence in communicating your work."],
-  ["07","Recommendation letters","The researcher can provide recommendation letters reflecting your research to support your applications to leading universities worldwide."],
+  ["07","University application support","The researcher can provide recommendation letters reflecting your research to support your applications to leading universities worldwide."],
 ];
 
 export const projects = [

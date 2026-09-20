@@ -43,7 +43,7 @@ export function ResearchMatters() {
   return (
     <article className="why-vertex-admissions" aria-labelledby="research-admissions-title">
       <div className="research-matters-heading">
-        <h3 id="research-admissions-title">Show leading universities how you think</h3>
+        <h3 id="research-admissions-title">Research that opens doors</h3>
         <p>Leading universities look beyond grades and test scores to understand how students think, explore, and engage with inquiry. Research offers a way to demonstrate academic curiosity and independent thinking. Public admissions reports show how those qualities can appear in students’ applications.</p>
       </div>
 

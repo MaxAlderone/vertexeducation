@@ -28,9 +28,11 @@ export const mentors: Mentor[] = [
     education: [
       "PhD, University of Cambridge, UK",
       "MASt in Applied Mathematics, University of Cambridge, UK",
+      "BS (Research) in Physics, Indian Institute of Science, Bangalore",
       "Doctoral research supervised by Professor Aron Wall",
     ],
     links: [
+      {label: "INSPIRE-HEP", href: "https://inspirehep.net/authors/1701381"},
       {label: "LinkedIn", href: "https://www.linkedin.com/in/rifath-khan/"},
       {label: "Stanford profile", href: "https://physics.stanford.edu/people/rifath-khan"},
     ],
@@ -44,19 +46,21 @@ export const mentors: Mentor[] = [
     name: "Arvind Shekar",
     role: "Postdoctoral Researcher - GIST",
     qualifications: [
-      "PhD · University of Southampton, UK",
+      "PhD · Southampton Theory Astrophysics and Gravity Research Center, UK",
       "MASt, Applied Mathematics · University of Cambridge, UK",
     ],
     photo: "/mentors/arvind-shekar.webp",
     bio: "Arvind studies quantum gravity, holography, entanglement and the black hole information paradox. His work explores the fundamental nature of spacetime, gravitational physics, and quantum theories.",
-    interests: ["Quantum information", "Holography", "Entanglement"],
+    interests: ["Quantum gravity", "Holography", "Entanglement", "Black hole physics"],
     education: [
-      "PhD in Theoretical Physics, University of Southampton, UK",
+      "PhD in Theoretical Physics, Southampton Theory Astrophysics and Gravity Research Center, UK",
       "MASt in Applied Mathematics, University of Cambridge, UK",
       "BS (Research) in Physics, Indian Institute of Science, Bangalore",
+      "Doctoral research supervised by Professor Marika Taylor",
     ],
     links: [
       {label: "INSPIRE-HEP", href: "https://inspirehep.net/authors/1771816"},
+      {label: "Southampton profile", href: "https://www.southampton.ac.uk/people/5yj5pt/mr-arvind-shekar"},
       {label: "Academic profile", href: "https://sites.google.com/view/arvindshekar/home"},
     ],
     publication: {

@@ -3,7 +3,7 @@ import {mentors} from "@/lib/mentors";
 import {Icon} from "./icons";
 
 function HighlightUniversities({text}: {text: string}) {
-  return text.split(/(University of (?:Cambridge|Southampton)(?:, UK)?|Stanford University|Indian Institute of Science(?:, Bangalore)?|\bGIST\b)/).map((part, index) =>
+  return text.split(/(University of (?:Cambridge|Southampton)(?:, UK)?|Southampton Theory Astrophysics and Gravity Research Center(?:, UK)?|Stanford University|Indian Institute of Science(?:, Bangalore)?|\bGIST\b)/).map((part, index) =>
     index % 2 === 1 ? <span className="mentor-university" key={index}>{part}</span> : part
   );
 }

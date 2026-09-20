@@ -1,0 +1,173 @@
+/* Shared Vertex styling for every route. */
+:root {
+  --gold: #ad6d00;
+  --gold-hover: #8b5700;
+  --cream: #f4efe5;
+  --line: #e1d4bd;
+  --blue: var(--gold);
+}
+
+.button {
+  background: var(--gold);
+  border-color: var(--gold);
+  border-radius: 6px;
+}
+.button:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  box-shadow: 0 8px 24px rgb(173 109 0 / 18%);
+}
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+.text-link { border-bottom-color: var(--gold); }
+
+.page-hero {
+  min-height: 0;
+  padding: clamp(64px, 7vw, 100px) max(5vw, calc((100vw - 1360px) / 2));
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+.page-hero .orb { display: none; }
+.page-hero .eyebrow, .section-head .eyebrow, .cta .eyebrow {
+  color: var(--gold);
+  font-weight: 500;
+  font-size: .85rem;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+.page-hero h1 {
+  max-width: 960px;
+  font-size: clamp(2rem, 3.8vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.page-hero .lede { font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.7; }
+.section-head h2, .journey-copy h2, .split-copy h2,
+.manifesto h2, .empty-state h2, .legal h2, .cta h2,
+.question-box h2, .form-aside h2, .contact-shell h2 {
+  font-size: clamp(1.75rem, 2.7vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.info-block h3, .feature-three h3, .role-grid h3, .benefit-grid h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.large-copy { font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.7; }
+.soft-section { background: var(--cream); }
+.info-block, .role-grid article {
+  padding: clamp(22px, 2.5vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+.info-block p:last-child, .role-grid article p:last-child { margin-bottom: 0; }
+.detail-grid, .feature-three, .role-grid { gap: 24px; }
+.program-overview-details { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.benefit-grid, .project-card, .notice, .contact-form, .success {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.benefit-grid article { background: #fff; padding: clamp(24px, 4vw, 45px); }
+.role-grid article > span, .benefit-grid article > span,
+.journey-num, .faq-list summary span { color: var(--gold); font-size: .85rem; font-weight: 500; }
+.journey-art { background: var(--cream); }
+.journey-art::before, .journey-art::after { border-color: var(--line); }
+.journey-art span { color: var(--gold); }
+.notice, .notice.warning, .placeholder-note { background: var(--cream); border-color: var(--line); }
+.placeholder-note { border-left-color: var(--gold); border-radius: 0 6px 6px 0; }
+
+.cta, .question-box {
+  padding: clamp(28px, 4vw, 56px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--cream);
+  color: var(--ink);
+}
+.cta::after { display: none; }
+.cta p, .question-box p { color: var(--muted); }
+.question-box small { color: var(--gold); }
+.cta .button.cream { background: var(--gold); border-color: var(--gold); color: #fff; }
+.cta .button.cream:hover { background: var(--gold-hover); border-color: var(--gold-hover); }
+.cta .light-link { color: var(--ink); }
+.application-form legend { font-weight: 500; }
+.application-form input, .application-form select, .application-form textarea,
+.contact-form input, .contact-form select, .contact-form textarea {
+  border-color: var(--line);
+  border-radius: 6px;
+}
+.application-form :is(input, select, textarea):focus,
+.contact-form :is(input, select, textarea):focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgb(173 109 0 / 12%);
+}
+.faq-list details { border-color: var(--line); }
+.faq-list summary { font-weight: 500; }
+.faq-list details[open] { background: var(--cream); }
+
+@media (max-width: 700px) {
+  .program-overview-details { grid-template-columns: 1fr; }
+  .page-hero { padding: 64px 22px; }
+  .cta { gap: 28px; }
+  .page-hero h1 { overflow-wrap: break-word; }
+}
+
+.section.why-vertex-standalone { padding-top: clamp(56px, 6vw, 88px); }
+/* Show every primary link on desktop, including smaller laptop screens. */
+@media (min-width: 1000px) {
+  .desktop-nav { display: flex; gap: clamp(12px, 1.1vw, 20px); }
+  .desktop-nav a, .mentor-link { font-size: .88rem; }
+  .mentor-link { display: inline-flex; }
+  .menu-button, .mobile-nav { display: none; }
+  .nav-shell { gap: 20px; padding-inline: 3vw; }
+  .site-logo { width: 180px; }
+}
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .site-header { height: auto; }
+  .nav-shell { flex-wrap: wrap; gap: 0 24px; padding-top: 12px; }
+  .nav-actions { margin-left: auto; }
+  .desktop-nav {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 4px 0 8px;
+    border-top: 1px solid #252525;
+  }
+}
+
+.hero .hero-actions { flex-wrap: wrap; }
+.hero .hero-mentor-button { background: transparent; color: #ffc14d; border-color: #ffc14d; box-shadow: none; }
+.hero .hero-mentor-button:hover { background: rgb(242 160 0 / 12%); }
+#mentor-application { scroll-margin-top: 32px; }
+
+.hero-introduction {
+  padding: clamp(28px, 4vw, 48px) max(5vw, calc((100vw - 1200px) / 2));
+  background: var(--paper);
+}
+.hero-introduction p {
+  margin: 0;
+  padding-left: clamp(18px, 2vw, 28px);
+  border-left: 2px solid var(--gold);
+  color: #526164;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.8;
+  max-width: 1100px;
+}
+.hero-introduction strong { color: var(--gold); font-weight: 500; }
+@media (max-width: 700px) {
+  .hero-introduction { padding: 28px 22px; }
+}
+
+.why-vertex-benefits h3 {
+  font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: #172326;
+}

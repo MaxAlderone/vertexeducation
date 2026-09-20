@@ -4,7 +4,7 @@ import {fileURLToPath} from "node:url";
 import {join} from "node:path";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const env = {...process.env, VERCEL_TELEMETRY_DISABLED: "1"};
+const env = {...process.env, VERCEL_TELEMETRY_DISABLED: "1", GIT_TERMINAL_PROMPT: "0"};
 const run = (command, args, capture = false) => {
   const result = spawnSync(command, args, {cwd: root, env, encoding: "utf8", stdio: capture ? "pipe" : "inherit"});
   if (result.error || result.status !== 0) {
@@ -36,6 +36,8 @@ try {
   console.log("\nChecking GitHub for newer changes…");
   run("git", ["fetch", "origin", "main"]);
   run("git", ["merge-base", "--is-ancestor", "origin/main", "HEAD"]);
+  // Verify push access before spending time on a build or creating a commit.
+  run("git", ["push", "--dry-run", "origin", "HEAD:main"]);
 
   console.log("\nChecking and building the website…");
   run("npm", ["run", "lint"]);

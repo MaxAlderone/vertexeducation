@@ -8,7 +8,7 @@ export const metadata = {title: "Mentors"};
 export default function Mentors() {
   return (
     <>
-      <PageHero eyebrow="Our mentors" title="Learn beside someone who knows how discovery feels." intro="Meet the researchers behind Vertex Research. Explore their academic backgrounds, research interests, and published work."/>
+      <PageHero eyebrow="Our mentors" title="Learn beside someone who knows how discovery feels." intro="Our mentors are PhDs and researchers from leading institutions worldwide such as Oxford, Cambridge and Stanford."/>
       <section className="section mentor-directory" aria-labelledby="mentor-directory-title">
         <div className="section-head">
           <div>

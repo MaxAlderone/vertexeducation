@@ -1,0 +1,37 @@
+.founders-panel {
+  border: 1px solid #e1d4bd;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fffdf9;
+}
+.founders-heading { padding: clamp(28px, 5vw, 72px); border-top: 3px solid #ad6d00; }
+.founders-eyebrow { display: block; color: #945c00; font-size: .75rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
+.founders-heading h2 { margin: 24px 0; font-size: clamp(1.75rem, 2.7vw, 2.75rem); font-weight: 500; line-height: 1.2; text-wrap: balance; }
+.founders-heading h2 span { color: #ad6d00; }
+.founders-heading > p { margin: 0; color: #526164; font-size: 1rem; }
+.founders-heading h2 { margin-top: 0; }
+.founders-heading > .founders-subtitle { margin-bottom: 18px; color: #172326; font-size: clamp(1.2rem, 1.8vw, 1.6rem); line-height: 1.4; }
+.founders-background { padding: clamp(28px, 4vw, 56px) clamp(28px, 5vw, 72px); background: #f4efe5; border-block: 1px solid #e1d4bd; }
+.founders-background-intro { display: grid; grid-template-columns: 1fr 2fr; gap: 32px; align-items: start; padding-bottom: 32px; border-bottom: 1px solid #ded5c5; }
+.founders-background-intro p { margin: 0; max-width: 720px; color: #526164; line-height: 1.8; }
+.founders-background-intro strong { color: #172326; font-weight: 500; }
+.founders-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; padding-top: 36px; }
+.founder-profile { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 22px; }
+.founder-profile img { width: 80px; height: 100px; object-fit: cover; object-position: center 25%; border-radius: 6px; border: 1px solid #ded5c5; }
+.founder-profile h3 { margin: 0 0 8px; font-size: 1.3rem; font-weight: 500; line-height: 1.25; }
+.founder-role { display: block; color: #945c00; font-size: .8rem; line-height: 1.6; }
+.founder-profile p { margin: 14px 0 0; font-size: .9rem; line-height: 1.8; color: #526164; }
+.founders-story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); padding: clamp(28px, 5vw, 72px); }
+.founders-story h3 { margin-bottom: 22px; font-size: 1.3rem; font-weight: 500; line-height: 1.3; }
+.founders-story p { font-size: 1rem; line-height: 1.85; color: #526164; }
+.founders-story p:last-child { margin-bottom: 0; }
+.founders-closing { margin: 0 clamp(28px, 5vw, 72px); padding: 32px 0 40px; border-top: 1px solid #e1d4bd; font-size: clamp(1.2rem, 2vw, 1.65rem); font-weight: 400; line-height: 1.5; }
+.founders-closing span { color: #ad6d00; }
+@media (max-width: 1000px) {
+  .founders-people { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .founders-background-intro, .founders-story { grid-template-columns: 1fr; gap: 24px; }
+  .founder-profile { grid-template-columns: 64px minmax(0, 1fr); gap: 16px; }
+  .founder-profile img { width: 64px; height: 80px; }
+}

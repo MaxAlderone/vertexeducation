@@ -24,7 +24,7 @@ const features = [
   "University application support",
   "Research symposium",
   "Duration",
-  "Program oversight from Lumiere program manager",
+  "Program oversight from Vertex manager",
 ];
 
 function Symposium({presentation}: {presentation: string}) {
@@ -34,7 +34,7 @@ function Symposium({presentation}: {presentation: string}) {
   </div>;
 }
 
-export function ProgramComparison() {
+export function ProgramComparison({showDetailsLink = true}: {showDetailsLink?: boolean}) {
   return (
     <section className="section programs-home" aria-labelledby="programs-home-title">
       <div className="programs-home-heading">
@@ -43,7 +43,7 @@ export function ProgramComparison() {
           <p className="programs-home-subtitle">Find your path into research.</p>
           <p>Explore the mentorship, research experience, and outcomes available at Vertex Research.</p>
         </div>
-        <Link className="text-link" href="/programs">Explore program details <Icon name="arrow"/></Link>
+        {showDetailsLink && <Link className="text-link" href="/programs">Explore program details <Icon name="arrow"/></Link>}
       </div>
       <div className="program-comparison-scroll" role="region" aria-label="Program comparison" tabIndex={0}>
         <table className="program-comparison">

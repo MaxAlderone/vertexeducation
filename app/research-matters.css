@@ -75,6 +75,7 @@
 
 .research-evidence {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 36px;
   max-width: 960px;
   margin: 44px auto 0;
@@ -127,6 +128,7 @@
 
 @media (max-width: 700px) {
   .research-evidence {
+    grid-template-columns: 1fr;
     gap: 28px;
     margin-top: 32px;
   }
