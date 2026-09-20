@@ -5,15 +5,15 @@ import {Icon} from "@/components/icons";
 const programs = [
   {
     name: "Vertex Scientific Review Program",
-    details: ["PhD and Postdoctoral researchers", "10", "Research review paper", "Recommendation letters", <Symposium key="symposium" presentation="10 minute review presentation"/>, "3–4 months", true],
+    details: ["PhD and Postdoctoral researchers", "10", "Research review paper", <span key="recommendation">Recommendation letters<sup>**</sup></span>, <Symposium key="symposium" presentation="10 minute review presentation"/>, "3–4 months", true],
   },
   {
     name: "Vertex Research Program",
-    details: ["PhD and Postdoctoral researchers", "15", "Research paper with a novel problem", "Recommendation letters", <Symposium key="symposium" presentation="20 minute research presentation"/>, "4–6 months", true],
+    details: ["PhD and Postdoctoral researchers", "15", "Research paper with a novel problem", <span key="recommendation">Recommendation letters<sup>**</sup></span>, <Symposium key="symposium" presentation="20 minute research presentation"/>, "4–6 months", true],
   },
   {
     name: "Vertex Research Fellowship",
-    details: ["PhD and Postdoctoral researchers", "20", "Research paper with a challenging problem and possible publication in a high school journal*", "Recommendation letters", <Symposium key="symposium" presentation="30 minute research presentation"/>, "6–8 months", true],
+    details: ["PhD and Postdoctoral researchers", "20", "Research paper with a challenging problem and possible publication in a high school journal*", <span key="recommendation">Recommendation letters<sup>**</sup></span>, <Symposium key="symposium" presentation="30 minute research presentation"/>, "6–8 months", true],
   },
 ];
 
@@ -77,6 +77,7 @@ export function ProgramComparison({showDetailsLink = true}: {showDetailsLink?: b
         </table>
       </div>
       <p className="program-comparison-footnote">*Publication is not guaranteed. Support includes up to three submission rounds to selective high-school or college-level journals.</p>
+      <p className="program-comparison-footnote">**Recommendation letters are provided at the mentor’s discretion and are not guaranteed.</p>
       <p className="programs-home-help">Need help finding the right fit? <Link href="/info-sessions">Attend our info session <Icon name="arrow"/></Link></p>
     </section>
   );
