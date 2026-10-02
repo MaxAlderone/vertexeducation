@@ -24,8 +24,18 @@ process.once("SIGTERM", () => { releaseLock(); process.exit(143); });
 try {
   const branch = run("git", ["branch", "--show-current"], true);
   if (branch !== "main") throw new Error("Switch to the main branch before publishing the live website.");
-  const remote = run("git", ["remote", "get-url", "origin"], true);
-  if (remote !== "https://github.com/MaxAlderone/vertexeducation.git") throw new Error("The origin repository has changed. Review the publishing script before continuing.");
+  // The account-specific SSH alias resolves to github.com on this Mac.
+  // Accept known transports while keeping the owner/repository check exact.
+  const expectedRemotes = new Set([
+    "https://github.com/MaxAlderone/vertexeducation.git",
+    "git@github.com:MaxAlderone/vertexeducation.git",
+    "git@github-maxalderone:MaxAlderone/vertexeducation.git",
+  ]);
+  const remotes = [
+    ...run("git", ["remote", "get-url", "--all", "origin"], true).split("\n"),
+    ...run("git", ["remote", "get-url", "--push", "--all", "origin"], true).split("\n"),
+  ];
+  if (remotes.some(remote => !expectedRemotes.has(remote))) throw new Error("The origin fetch or push URL is not an approved MaxAlderone/vertexeducation URL. Review the publishing script before continuing.");
   const project = JSON.parse(readFileSync(join(root, ".vercel/project.json"), "utf8"));
   if (project.projectId !== "prj_KkruSiCW7p4lrlv4ORTkZ0DeWlfF") throw new Error("This checkout is not linked to the expected Vertex Vercel project.");
 

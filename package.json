@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "test:applications": "node scripts/test-applications.mjs",
     "publish:site": "node scripts/publish-site.mjs"
   },
   "dependencies": {

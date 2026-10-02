@@ -2,7 +2,7 @@
 
 > **Status:** Living document
 > **Purpose:** Primary product and content specification for the website
-> **Last Updated:** Update this date whenever making major changes
+> **Last Updated:** 2026-10-03
 
 ---
 
@@ -1438,6 +1438,16 @@ When an AI coding agent reads this file:
 # 40. Change Log
 
 Use this section to record major product decisions.
+
+## 2026-10-03 — Application storage integration
+
+* Student and mentor applications use a Next.js server endpoint and a private
+  Supabase `applications` table, with server validation and recoverable errors.
+* Supabase credentials are stored only in Vercel environment settings at the
+  owner's request. Local checks use mock responses and do not need real secrets.
+* Activation requires the supplied SQL migration, deployment, and live verification.
+* Email delivery remains pending Resend setup. Contact forms remain demos.
+* The privacy notice describes the data flow; formal policy decisions remain TBD.
 
 ## Initial Version
 

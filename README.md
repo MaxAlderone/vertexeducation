@@ -18,12 +18,19 @@ Then open `http://localhost:3000`.
 ```bash
 npm run lint
 npm run typecheck
+npm run test:applications
 npm run build
 ```
 
 ## Content and prototype status
 
-Brand details and reusable content live in `lib/site-data.ts`. Application and contact forms intentionally do not transmit or persist information yet. Pricing, program duration, formal policies, mentor profiles, contact email, and other business details marked TBD in the product specification are not invented in the interface.
+Brand details and reusable content live in `lib/site-data.ts`. Student and mentor
+applications use a server endpoint to save submissions privately in Supabase.
+Activation requires running the SQL migration and deploying with the two Vercel
+environment variables described in [Application setup](docs/application-setup.md).
+Real credentials stay in Vercel; local checks and builds do not need them.
+Contact forms remain demos. Application email notifications are not implemented yet.
+Formal policies and business details marked TBD still require owner input.
 
 ## Publish local changes
 
